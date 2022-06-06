@@ -1,0 +1,133 @@
+:root {
+    --background-color: #00030C;
+    --CorFonte-principal: #FFFFFF;
+    --CorFonte-alternativa: #c0c0c0d7;
+    --btn-cor: #167BF7;
+    --fonte-principal: "Inter", sans-serif
+}
+ 
+body{
+    background-color: var(--background-color);
+    color: var(--CorFonte-principal);
+    font-family: var(--fonte-principal);
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    width: 100vw;
+    height: 90vh;
+    align-items: center;
+}
+
+.container__principal {
+    background: url(/img/Background.png) no-repeat content-box;
+    background-size: contain;
+}
+
+.container__principal--conteudo {
+    display: grid;
+    justify-items: center;
+    padding: 54px;
+    row-gap: 28px;
+    text-align: center;
+    width: 78%
+}
+
+.container__principal--titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__principal--texto{  
+    font-size: 12px;
+    color: var(--CorFonte-alternativa)
+}
+
+.container__segundario {
+    box-sizing: border-box;
+    padding: 0 120px;
+}
+
+.container__segundario--reverso .info{
+    grid-column: 1/2;
+    grid-row: 1
+}
+
+.titulo__container {
+    font-weight: 700;
+    color: var(--CorFonte-principal);
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+.texto__container{
+    font-weight: 400;
+    color: var(--CorFonte-alternativa);
+    margin-bottom: 16px;
+    line-height: 25px
+}
+
+.btn__assinatura {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--btn-cor);
+    color: var(--CorFonte-principal);
+    border: 0px;
+    margin: 0 auto;
+}
+
+.btn_assinatura--segundario {
+    background-color: transparent;
+    border: 1px solid;
+}
+
+.btn__assinatura-container-segundario {
+    width: auto;
+    display: inline-block
+}
+
+.disponibilidade {
+    height: 50vh;
+    text-align: center;
+}
+
+.dispositivos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px
+}
+
+.nome-dispositivo{
+    font-size: 1.8rem;
+}
+
+/* footer */
+.rodapé {
+    text-align: center;
+    height: 28vh;
+    display: grid;
+    row-gap: 30px;
+    padding: 150px 80px 40px 80px
+}
+
+.rodapé .logo__alura {
+    justify-self: center
+}
+
+.links {
+    display: flex;
+}
+
+.link {
+    color: var(--CorFonte-principal);
+    text-decoration: none;
+    margin: 0 7px
+}
+
+.rodapé p {
+    color: var(--CorFonte-alternativa)
+}
