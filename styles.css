@@ -22,7 +22,7 @@ body{
 }
 
 .container__principal {
-    background: url(/img/Background.png) no-repeat content-box;
+    background: url(assets/img/Background.png) no-repeat content-box;
     background-size: contain;
 }
 
