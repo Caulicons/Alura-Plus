@@ -1,0 +1,85 @@
+@media screen and (max-width: 1220px) {
+    html {
+        max-width: 400px;
+        margin: 0 auto
+    }
+
+    img {
+        max-width: 400px
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr; 
+        width: 100vw;
+        height: 80vh;
+        align-items: center;
+        justify-items: center
+    }
+
+    .container__principal {
+        background: url(/assets/img/Background.png) no-repeat content-box;
+        background-size: contain;
+        background: none;
+        height: 80%
+    }
+
+    .container__segundario {
+        box-sizing: border-box;
+        padding: 0 25px;
+        margin: 70px 0;
+        grid-template-areas:
+        "titulo"
+        "ilustração"
+        ;
+    }
+    
+    .titulo__container {
+        grid-area: titulo
+    }
+    
+    .ilustracao{
+        grid-area: ilustração;
+    }
+    
+    .texto__container{
+        grid-area: descrição;
+    }
+    
+    .container__segundario--reverso {
+        grid-row: 1;
+        align-items: flex-end
+    }
+
+    .btn__assinatura-container-segundario{
+        grid-area: botão;
+        grid-row: 1;
+        width: 50%;
+    }
+
+    .ilustracao_Opcional{
+        display: none
+    }
+
+     .rodapé {
+        padding-top: 50px
+    } 
+
+    .disponibilidade {
+        height: auto;
+    }
+
+    .disponibilidade .titulo__container {
+        margin-top: 2rem 
+    }
+
+    .dispositivos {
+        flex-direction: column
+    }
+
+    .links {
+        display: grid;
+        row-gap: 20px;
+    }
+}
+
