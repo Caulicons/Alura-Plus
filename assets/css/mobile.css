@@ -1,85 +1,60 @@
 @media screen and (max-width: 1220px) {
-    html {
-        max-width: 400px;
-        margin: 0 auto
-    }
+  body {
+    display: grid;
+    justify-items: center;
+  }
+  img {
+    width: 100%;
+    max-width: 400px;
+  }
 
-    img {
-        max-width: 400px
-    }
+  .container {
+    grid-template-columns: 100%;
+    height: 80vh;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    width: 90%;
+    overflow: hidden;
+    gap: 20px;
+    padding: 0;
+  }
 
-    .container {
-        display: grid;
-        grid-template-columns: 1fr; 
-        width: 100vw;
-        height: 80vh;
-        align-items: center;
-        justify-items: center
-    }
+  .container-hero__conteudo {
+    width: 100%;
+  }
 
-    .container__principal {
-        background: url(/assets/img/Background.png) no-repeat content-box;
-        background-size: contain;
-        background: none;
-        height: 80%
-    }
+  .container-hero {
+    background: none;
+  }
 
-    .container__segundario {
-        box-sizing: border-box;
-        padding: 0 25px;
-        margin: 70px 0;
-        grid-template-areas:
-        "titulo"
-        "ilustração"
-        ;
-    }
-    
-    .titulo__container {
-        grid-area: titulo
-    }
-    
-    .ilustracao{
-        grid-area: ilustração;
-    }
-    
-    .texto__container{
-        grid-area: descrição;
-    }
-    
-    .container__segundario--reverso {
-        grid-row: 1;
-        align-items: flex-end
-    }
+  .container__segundario--reverso {
+    height: 60vh;
+    padding: 0 auto;
+  }
 
-    .btn__assinatura-container-segundario{
-        grid-area: botão;
-        grid-row: 1;
-        width: 50%;
-    }
+  .ilustracao_Opcional {
+    display: none;
+  }
 
-    .ilustracao_Opcional{
-        display: none
-    }
+  .rodapé {
+    padding-top: 50px;
+  }
 
-     .rodapé {
-        padding-top: 50px
-    } 
+  .disponibilidade {
+    height: auto;
+  }
 
-    .disponibilidade {
-        height: auto;
-    }
+  .disponibilidade .titulo__container {
+    margin-top: 2rem;
+  }
 
-    .disponibilidade .titulo__container {
-        margin-top: 2rem 
-    }
+  .dispositivos {
+    flex-direction: column;
+  }
 
-    .dispositivos {
-        flex-direction: column
-    }
-
-    .links {
-        display: grid;
-        row-gap: 20px;
-    }
+  .links {
+    display: grid;
+    row-gap: 20px;
+  }
 }
-

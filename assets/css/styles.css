@@ -1,133 +1,151 @@
 :root {
-    --background-color: #00030C;
-    --CorFonte-principal: #FFFFFF;
-    --CorFonte-alternativa: #c0c0c0d7;
-    --btn-cor: #167BF7;
-    --fonte-principal: "Inter", sans-serif
-}
- 
-body{
-    background-color: var(--background-color);
-    color: var(--CorFonte-principal);
-    font-family: var(--fonte-principal);
+  --background-color: #00030c;
+  --CorFonte-principal: #ffffff;
+  --CorFonte-alternativa: #c0c0c0d7;
+  --btn-cor: #167bf7;
+  --fonte-principal: "Inter", sans-serif;
 }
 
-
+body {
+  background-color: var(--background-color);
+  color: var(--CorFonte-principal);
+  font-family: var(--fonte-principal);
+  /* Grid layout*/
+  display: grid;
+  justify-items: center;
+  /*  grid-template: 
+  "hero"
+  "watch"
+  ; */
+  place-content: center;
+}
 .container {
-    display: grid;
-    grid-template-columns: 50% 50%; 
-    width: 100vw;
-    height: 90vh;
-    align-items: center;
+  display: grid;
+  justify-items: center;
+  place-content: center;
+  grid-template-columns: 50% 50%;
+
+  height: 90vh;
+  max-width: 1440px;
+  place-content: center;
+  padding: 20px;
+  overflow-x: hidden;
+}
+/* Hero Section */
+
+.container-hero {
+  background: url(../img/Background.png) no-repeat border-box center;
+  background-size: contain;
 }
 
-.container__principal {
-    background: url(../img/Background.png) no-repeat content-box;
-    background-size: contain;
+.container-hero__title {
+  font-size: 28px;
+  font-weight: 700;
 }
 
-.container__principal--conteudo {
-    display: grid;
-    justify-items: center;
-    padding: 54px;
-    row-gap: 28px;
-    text-align: center;
-    width: 78%
+.container-hero__conteudo {
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  row-gap: 28px;
+  width: 78%;
 }
 
-.container__principal--titulo {
-    font-size: 28px;
-    font-weight: 700;
+.container-hero__texto {
+  font-size: 12px;
+  color: var(--CorFonte-alternativa);
 }
 
-.container__principal--texto{  
-    font-size: 12px;
-    color: var(--CorFonte-alternativa)
+.info {
+  display: grid;
+  place-content: center;
 }
 
-.container__segundario {
-    box-sizing: border-box;
-    padding: 0 120px;
-}
-
-.container__segundario--reverso .info{
-    grid-column: 1/2;
-    grid-row: 1
+.container__segundario--reverso .info {
+  grid-column: 1/2;
+  grid-row: 1;
 }
 
 .titulo__container {
-    font-weight: 700;
-    color: var(--CorFonte-principal);
-    font-size: 3rem;
-    margin-bottom: 12px;
+  font-weight: 700;
+  color: var(--CorFonte-principal);
+  font-size: 2rem;
+  width: 100%;
+  margin-bottom: 12px;
 }
 
-.texto__container{
-    font-weight: 400;
-    color: var(--CorFonte-alternativa);
-    margin-bottom: 16px;
-    line-height: 25px
+.texto__container {
+  font-weight: 400;
+  color: var(--CorFonte-alternativa);
+  margin-bottom: 16px;
+  line-height: 25px;
 }
 
 .btn__assinatura {
-    width: 100%;
-    padding: 1rem;
-    border-radius: 10px;
-    background-color: var(--btn-cor);
-    color: var(--CorFonte-principal);
-    border: 0px;
-    margin: 0 auto;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--btn-cor);
+  color: var(--CorFonte-principal);
+  border: 0px;
+  margin: 0 auto;
 }
 
 .btn_assinatura--segundario {
-    background-color: transparent;
-    border: 1px solid;
+  background-color: transparent;
+  border: 1px solid;
 }
 
 .btn__assinatura-container-segundario {
-    width: auto;
-    display: inline-block
+  width: auto;
+  display: inline-block;
 }
 
 .disponibilidade {
-    height: 50vh;
-    text-align: center;
+  height: 50vh;
+  text-align: center;
+  display: grid;
+  justify-items: center;
 }
 
 .dispositivos {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-top: 50px
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.nome-dispositivo{
-    font-size: 1.8rem;
+.nome-dispositivo {
+  font-size: 1.6rem;
 }
 
 /* footer */
 .rodapé {
-    text-align: center;
-    height: 28vh;
-    display: grid;
-    row-gap: 30px;
-    padding: 150px 80px 40px 80px
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 95%;
+  text-align: center;
+  display: grid;
+  padding-bottom: 40px;
+  row-gap: 30px;
 }
 
 .rodapé .logo__alura {
-    justify-self: center
+  max-width: 102px;
+  justify-self: center;
 }
 
 .links {
-    display: flex;
+  display: flex;
 }
 
 .link {
-    color: var(--CorFonte-principal);
-    text-decoration: none;
-    margin: 0 7px
+  color: var(--CorFonte-principal);
+  text-decoration: none;
+  margin: 0 7px;
 }
 
 .rodapé p {
-    color: var(--CorFonte-alternativa)
+  color: var(--CorFonte-alternativa);
 }
